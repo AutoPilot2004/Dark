@@ -14,7 +14,7 @@ find_package(glm CONFIG REQUIRED)
 find_package(box2d CONFIG REQUIRED)
 find_package(yaml-cpp CONFIG REQUIRED)
 find_package(EnTT CONFIG REQUIRED)
-find_package(stb REQUIRED)
+find_package(Stb REQUIRED)
 
 add_subdirectory ("Dark")
 add_subdirectory ("DarkEditor")
