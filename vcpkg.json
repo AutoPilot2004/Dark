@@ -1,0 +1,11 @@
+{
+    "dependencies": [
+        "glfw3",
+        "glew",
+        "glm",
+        "box2d",
+        "yaml-cpp",
+        "entt",
+        "stb"
+    ]
+}

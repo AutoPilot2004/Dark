@@ -1,0 +1,23 @@
+#version 330 core
+
+layout(location = 0)in vec3 aPosition;
+layout(location = 1)in vec4 aColor;
+layout(location = 2)in vec2 aUV;
+layout(location = 3)in float aTexIndex;
+
+out vec4 color;
+out vec2 uv;
+out float texIndex;
+
+uniform mat4 P;
+
+void main()
+{
+	gl_Position = P * vec4(aPosition, 1.0);
+
+	color = aColor;
+
+	uv = aUV;
+
+	texIndex = aTexIndex;
+}
