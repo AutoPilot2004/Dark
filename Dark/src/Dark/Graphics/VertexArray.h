@@ -27,15 +27,7 @@ namespace Dark
 		void del();
 
 		template<typename T> struct AttribTraitsT;
-		template<> struct AttribTraitsT<int> { static constexpr GLenum glType = GL_INT; };
-		template<> struct AttribTraitsT<unsigned int> { static constexpr GLenum glType = GL_UNSIGNED_INT; };
-		template<> struct AttribTraitsT<float> { static constexpr GLenum glType = GL_FLOAT; };
-		template<> struct AttribTraitsT<char> { static constexpr GLenum glType = GL_BYTE; };
-		template<> struct AttribTraitsT<unsigned char> { static constexpr GLenum glType = GL_UNSIGNED_BYTE; };
-		
 		template<bool B> struct AttribTraitsB;
-		template<> struct AttribTraitsB<true> { static constexpr GLboolean glNormalized = GL_TRUE; };
-		template<> struct AttribTraitsB<false> { static constexpr GLboolean glNormalized = GL_FALSE; };
 
 		template<typename TYPE, bool NORMALIZED>
 		inline void addVertexAttribute(GLint size) {
@@ -55,3 +47,11 @@ namespace Dark
 		bool m_idGenerated;
 	};
 }
+
+template<> struct Dark::VertexArray::AttribTraitsT<int> { static constexpr GLenum glType = GL_INT; };
+template<> struct Dark::VertexArray::AttribTraitsT<unsigned int> { static constexpr GLenum glType = GL_UNSIGNED_INT; };
+template<> struct Dark::VertexArray::AttribTraitsT<float> { static constexpr GLenum glType = GL_FLOAT; };
+template<> struct Dark::VertexArray::AttribTraitsT<char> { static constexpr GLenum glType = GL_BYTE; };
+template<> struct Dark::VertexArray::AttribTraitsT<unsigned char> { static constexpr GLenum glType = GL_UNSIGNED_BYTE; };
+template<> struct Dark::VertexArray::AttribTraitsB<true> { static constexpr GLboolean glNormalized = GL_TRUE; };
+template<> struct Dark::VertexArray::AttribTraitsB<false> { static constexpr GLboolean glNormalized = GL_FALSE; };

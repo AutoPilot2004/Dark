@@ -1,9 +1,10 @@
 #pragma once
 #include <string>
+#include <signal.h>
 
 #include "Utils/Dark.h"
 
-#define ASSERT(x) if(!x) __debugbreak();
+#define ASSERT(x) if(!x) raise(SIGABRT)
 
 #define GLEC(x) clearGLErrors();\
 				x;\

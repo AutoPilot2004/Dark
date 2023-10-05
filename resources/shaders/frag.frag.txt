@@ -12,7 +12,107 @@ void main()
 {
 	int index = int(texIndex);
 
-	vec4 texColor = texture(tex[index], uv);
+	vec4 texColor;
+	
+	switch(index) {
+		case 0:
+			texColor = texture(tex[0], uv);
+			break;
+		case 1:
+			texColor = texture(tex[1], uv);
+			break;
+		case 2:
+			texColor = texture(tex[2], uv);
+			break;
+		case 3:
+			texColor = texture(tex[3], uv);
+			break;
+		case 4:
+			texColor = texture(tex[4], uv);
+			break;
+		case 5:
+			texColor = texture(tex[5], uv);
+			break;
+		case 6:
+			texColor = texture(tex[6], uv);
+			break;
+		case 7:
+			texColor = texture(tex[7], uv);
+			break;
+		case 8:
+			texColor = texture(tex[8], uv);
+			break;
+		case 9:
+			texColor = texture(tex[9], uv);
+			break;
+		case 10:
+			texColor = texture(tex[10], uv);
+			break;
+		case 11:
+			texColor = texture(tex[11], uv);
+			break;
+		case 12:
+			texColor = texture(tex[12], uv);
+			break;
+		case 13:
+			texColor = texture(tex[13], uv);
+			break;
+		case 14:
+			texColor = texture(tex[14], uv);
+			break;
+		case 15:
+			texColor = texture(tex[15], uv);
+			break;
+		case 16:
+			texColor = texture(tex[16], uv);
+			break;
+		case 17:
+			texColor = texture(tex[17], uv);
+			break;
+		case 18:
+			texColor = texture(tex[18], uv);
+			break;
+		case 19:
+			texColor = texture(tex[19], uv);
+			break;
+		case 20:
+			texColor = texture(tex[20], uv);
+			break;
+		case 21:
+			texColor = texture(tex[21], uv);
+			break;
+		case 22:
+			texColor = texture(tex[22], uv);
+			break;
+		case 23:
+			texColor = texture(tex[23], uv);
+			break;
+		case 24:
+			texColor = texture(tex[24], uv);
+			break;
+		case 25:
+			texColor = texture(tex[25], uv);
+			break;
+		case 26:
+			texColor = texture(tex[26], uv);
+			break;
+		case 27:
+			texColor = texture(tex[27], uv);
+			break;
+		case 28:
+			texColor = texture(tex[28], uv);
+			break;
+		case 29:
+			texColor = texture(tex[29], uv);
+			break;
+		case 30:
+			texColor = texture(tex[30], uv);
+			break;
+		case 31:
+			texColor = texture(tex[31], uv);
+			break;
+
+	}
 
 	outColor = texColor * color;
 }
