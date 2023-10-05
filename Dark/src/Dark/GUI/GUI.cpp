@@ -31,7 +31,7 @@ namespace ImGui
 		IMGUI_CHECKVERSION();
 		ImGui::CreateContext();
 		ImGuiIO& io = ImGui::GetIO();
-        io.Fonts->AddFontFromFileTTF(R"(resources\fonts\AovelSansRounded-rdDL.ttf)", 16.0f);
+        io.Fonts->AddFontFromFileTTF("resources/fonts/AovelSansRounded-rdDL.ttf", 16.0f);
         io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
         io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
         io.IniFilename = nullptr;
